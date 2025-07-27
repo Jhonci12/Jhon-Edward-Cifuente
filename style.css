@@ -1,0 +1,116 @@
+/* FUENTES Y ESTILOS GENERALES */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+.logo {
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.texto-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.subtitulo-header {
+  color: #BFA181;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Barra de navegación principal */
+.nav-pills .nav-link {
+  background-color: #f1f1f1 !important; /* Marrón oscuro */
+  color: #000000 !important;
+  margin: 0 5px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #31150a !important; /* Marrón más oscuro para el activo */
+  color: #fff !important;
+}
+
+/* Agregar estas reglas CSS dentro de tu <style> existente */
+.menu-section {
+  display: none;
+}
+
+.menu-section.active {
+  display: block;
+}
+
+.nav-link {
+  color: #31150a;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  background-color: #31150a !important;
+  color: white !important;
+}
+
+/* Secciones principales */
+.seccion-principal {
+  display: none;
+  min-height: 60vh;
+}
+
+.seccion-principal.activo {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive para móviles - agrega al final */
+@media (max-width: 768px) {
+  .nav-pastillas {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-pastillas .nav-item {
+    width: 80%;
+    margin: 3px 0;
+  }
+  
+  .nav-pastillas .enlace-nav {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-pastillas .nav-item {
+    width: 90%;
+  }
+}

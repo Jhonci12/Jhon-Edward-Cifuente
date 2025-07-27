@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhonci - Portafolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <div class="zona-encabezado">
+      <header class="encabezado">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 position-relative">
+              <a href="https://www.youtube.com/@Jhoncif" target="_blank" rel="noopener">
+                <img class="imagen-portada w-100" src="portada (2).JPEG" alt="Portada">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Barra de navegación principal -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+              <nav class="barra-navegacion">
+                <ul class="lista-navegacion justify-content-center">
+                  <li class="item-navegacion">
+                    <a class="enlace-navegacion activo" onclick="mostrarSeccion('informacion', event)">Información</a>
+                  </li>
+
+                  <li class="item-navegacion">
+                    <a class="enlace-navegacion" onclick="mostrarSeccion('contacto', event)">Contacto</a>
+                  </li>
+                  <li class="item-navegacion">
+                    <a class="enlace-navegacion" onclick="mostrarSeccion('donaciones', event)">Donaciones</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <main class="contenedor-principal">
+    <!-- Sección Información -->
+    <section id="informacion" class="seccion-principal activo">
+      <div class="contenedor-seccion">
+        <h2 class="titulo-seccion">📋 Información Personal</h2>
+        <div class="tarjeta">
+          <p class="texto-principal">Mi nombre es Jhon Edward Cifuentes, estudiante de programación y técnico en
+            sistemas. Soy el creador de Jhonci, un canal donde combino mi pasión por los videojuegos con la edición de
+            video y la creatividad digital.
+
+            Disfruto compartir mis aventuras en títulos como Minecraft, GTA V, Red Dead Redemption 2 y muchos más.
+
+            Este espacio es más que una página: es una ventana a mi mundo, donde cada clip, directo o contenido refleja
+            lo que me gusta hacer. Siempre estoy aprendiendo, mejorando y buscando conectar con personas que disfruten
+            tanto como yo del gaming y la creación de contenido.
+
+            ¡Bienvenid@ a mi rincón del internet!
+          </p>
+        </div>
+      </div>
+      <div class="container my-5">
+        <h2 class="text-center mb-4">🎬 </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/eIBjE4-Qypg" title="Video de Jhonci" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <figure class="fotopc">
+          <img src="PC.jpg" class="figure-img img-fluid rounded" alt="fotopc1">
+          <figcaption class="figure-caption text-end">
+          </figcaption>
+        </figure>
+
+        <div class="container contenedor-principal-info">
+          <div class="row">
+            <div class="col-4 columna-navegacion">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action item-lista-pestaña active" id="list-home-list"
+                  data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">CPU</a>
+                <a class="list-group-item list-group-item-action item-lista-pestaña" id="list-profile-list"
+                  data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">GPU</a>
+                <a class="list-group-item list-group-item-action item-lista-pestaña" id="list-messages-list"
+                  data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">BOARD</a>
+                <a class="list-group-item list-group-item-action item-lista-pestaña" id="list-settings-list"
+                  data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings">OTROS</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active text-center panel-contenido-info" id="list-home" role="tabpanel"
+                  aria-labelledby="list-home-list">
+                  <p class="fs-5">
+                    Procesador: AMD Ryzen 5 5600G.<br>
+                    Velocidad: 3.9 GHz.<br>
+                    Núcleos: 6.<br>
+                    Hilos: 12.<br>
+                    Gráficos: Radeon Graphics integrados.<br>
+                    Socket: AM4.
+                  </p>
+                </div>
+                <div class="tab-pane fade text-center panel-contenido-info" id="list-profile" role="tabpanel"
+                  aria-labelledby="list-profile-list">
+                  <p class="fs-5">
+                    GPU: NVIDIA GeForce RTX 3050.<br>
+                    Memoria: 6 GB GDDR6.<br>
+                    Velocidad de reloj: 1.55 GHz.<br>
+                    Ray Tracing: Sí.
+                  </p>
+                </div>
+                <div class="tab-pane fade text-center panel-contenido-info" id="list-messages" role="tabpanel"
+                  aria-labelledby="list-messages-list">
+                  <p class="fs-5">
+                    Placa base: ASUS A520.<br>
+                    Socket: AM4.<br>
+                    Factor de forma: ATX.<br>
+                    Aura Sync RGB.
+                  </p>
+                </div>
+                <div class="tab-pane fade text-center panel-contenido-info" id="list-settings" role="tabpanel"
+                  aria-labelledby="list-settings-list">
+                  <p class="fs-5">
+                    Almacenamiento: 500 GB SSD M.2.<br>
+                    Disco SSD: Corsa 1 TB.<br>
+                    Memoria: 40 GB DDR4.<br>
+                    Velocidad: 3200 MHz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+          const triggerTabList = document.querySelectorAll('#list-tab a');
+          triggerTabList.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl);
+
+            triggerEl.addEventListener('click', event => {
+              event.preventDefault();
+              tabTrigger.show();
+            });
+          });
+        </script>
+
+
+      </div>
+      <div class="container my-5" style="background-color: #f0f8ff; padding: 30px; border-radius: 8px;">
+        <h3 class="text-center mb-4 text-info ">Software de Edición</h3>
+
+        <ul class="nav nav-tabs" id="softwareEdicionTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="filmora-tab" data-bs-toggle="tab" data-bs-target="#panel-filmora"
+              type="button" role="tab" aria-controls="panel-filmora" aria-selected="true">Filmora</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="pixlr-tab" data-bs-toggle="tab" data-bs-target="#panel-pixlr" type="button"
+              role="tab" aria-controls="panel-pixlr" aria-selected="false">Piscar</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="softwareEdicionTabContent"
+          style="border: 1px solid #cfe2ff; border-top: none; padding: 20px; background-color: white;">
+          <div class="tab-pane fade show active" id="panel-filmora" role="tabpanel" aria-labelledby="filmora-tab">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <a href="https://filmora.wondershare.es" target="_blank" rel="noopener">
+                  <img src="filmora.png" class="img-fluid rounded-circle mb-3" alt="Logo Filmora"
+                    style="max-width: 150px;">
+                </a>
+              </div>
+              <div class="col-md-9">
+                <h5 class="text-primary">Filmora: Edición de Video Simplificada</h5>
+                <p class="fs-6">
+                  Filmora es un software de edición de video potente y fácil de usar, perfecto para creadores de
+                  contenido de todos los niveles. Destaca por su interfaz intuitiva de arrastrar y soltar, una vasta
+                  biblioteca de efectos, transiciones y títulos, y funciones avanzadas como el seguimiento de movimiento
+                  y la pantalla verde. Es ideal para producir videos para YouTube, redes sociales y proyectos personales
+                  con resultados profesionales sin una curva de aprendizaje pronunciada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="panel-pixlr" role="tabpanel" aria-labelledby="pixlr-tab">
+            <div class="row align-items-center">
+              <div class="col-md-3 text-center">
+                <a href="https://picsart.com/es/create" target="_blank" rel="noopener">
+                  <img src="piscar.png" class="img-fluid rounded-circle mb-3" alt="Logo Pixlr"
+                    style="max-width: 150px;">
+                </a>
+              </div>
+              <div class="col-md-9">
+                <h5 class="text-info">Piscarr: Edición de Fotos Online al Instante</h5>
+                <p class="fs-6">
+                  Piscar es un innovador editor de fotos basado en navegador que ofrece capacidades de edición de nivel
+                  profesional sin necesidad de instalación. Disponible en dos versiones, Picar E (avanzado) y Pixlr X
+                  (rápido), permite realizar desde retoques básicos hasta composiciones complejas, añadir filtros,
+                  efectos y texto. Es la herramienta perfecta para diseñadores web, creadores de contenido de redes
+                  sociales y cualquiera que necesite editar imágenes rápidamente desde cualquier dispositivo con acceso
+                  a internet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // Script para la primera sección de pestañas (si la tienes activa para CPU, GPU, etc.)
+        // Asegúrate de que el selector '#list-tab a' apunte correctamente a tus elementos <a> de esas pestañas.
+        const triggerTabListPC = document.querySelectorAll('#list-tab a');
+        if (triggerTabListPC.length > 0) { // Solo si estas pestañas existen
+          triggerTabListPC.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl);
+            triggerEl.addEventListener('click', event => {
+              event.preventDefault();
+              tabTrigger.show();
+            });
+          });
+        }
+
+        // Script para la NUEVA sección de pestañas (Filmora y Pixlr)
+        // Asegúrate de que el selector '#softwareEdicionTabs .nav-link' apunte correctamente a tus nuevos elementos <a>.
+        const triggerTabListSoftware = document.querySelectorAll('#softwareEdicionTabs .nav-link');
+        if (triggerTabListSoftware.length > 0) { // Solo si estas pestañas existen
+          triggerTabListSoftware.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl);
+            triggerEl.addEventListener('click', event => {
+              event.preventDefault();
+              tabTrigger.show();
+            });
+          });
+        }
+      </script>
+
+
+
+
+    </section>
+
+
+
+    <section id="contacto" class="seccion-principal">
+      <div class="contenedor-seccion">
+        <h2 class="titulo-seccion text-center mb-4">📱 Contacto</h2>
+      </div>
+
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form action="https://formsubmit.co/jhoncistudio@gmail.com" method="POST">
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="contact-name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="contact-name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contact-email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="contact-email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="contact-message" name="message" rows="4" required></textarea>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde Monarca">
+              </div>
+              <div class="modal-footer justify-content-center border-top-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- Sección Donaciones -->
+    <section id="donaciones" class="seccion-principal">
+      <div class="contenedor-seccion">
+        <h2 class="titulo-seccion">💖 Donaciones</h2>
+        <div class="tarjeta">
+          <p class="texto-principal">Proyecto Familiar – Construcción de Nuestro Hogar
+
+            Hace 4 años iniciamos, como familia, la construcción de nuestra casa. Ha sido un proceso largo y con muchos
+            retos, pero poco a poco hemos ido avanzando. Aunque aún no está terminada, seguimos trabajando con
+            dedicación y esfuerzo para hacer realidad este sueño familiar.
+          </p>
+        </div>
+      </div>
+      <div class="container my-5">
+        <h3 class="text-center mb-5 text-primary">Nuestra Galería de Imágenes</h3>
+
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="1,1.jpg" class="d-block w-100" alt="Imagen de la galería 1">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Mis padres </h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="2.jpg" class="d-block w-100" alt="Imagen de la galería 2">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Terreno </h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="3.jpg" class="d-block w-100" alt="Imagen de la galería 3">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Primeras Columnas </h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="4.png" class="d-block w-100" alt="Imagen de la galería 4">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Avance</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="5.jpg" class="d-block w-100" alt="Imagen de la galería 5">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.paypal.com/donate/?hosted_button_id=4HQE4PUPEP7R6" target="_blank" rel="noopener">
+                <img src="6.png" class="d-block w-100" alt="Imagen de la galería 6">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Actualidad </h5>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="toast-bienvenida" style="
+  display:none;
+  position:fixed;
+  bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#190746;
+  color:#fff;
+  padding:16px 28px;
+  border-radius:24px;
+  box-shadow:0 2px 12px rgba(0,0,0,0.2);
+  z-index:9999;
+  font-size:1.1rem;
+">
+  ¡Bienvenidos a mi portafolio! 😎
+</div>
+<button id="btnArriba" style="display:none;position:fixed;bottom:24px;right:24px;z-index:9999;" class="btn btn-primary rounded-circle shadow">
+  ↑
+</button>
+
+<!-- Mariposa interactiva (pega esto donde estaba tu mariposa original) -->
+<div id="control-xbox" style="position:fixed; left:50vw; top:50vh; z-index:9999; cursor:pointer;">
+  <img src="control.PNG" style="width: 45px; height: auto; display: block;">
+</div>
+
+<!-- Botón de Instagram -->
+<a href="https://instagram.com/jhonci.1" target="_blank" id="btnInstagram"
+   style="position:fixed;bottom:90px;right:24px;z-index:9999;display:flex;align-items:center;justify-content:center;width:48px;height:48px;background:#E1306C;color:#fff;border-radius:50%;box-shadow:0 2px 12px rgba(0,0,0,0.2);text-decoration:none;font-size:2rem;">
+  <svg width="28" height="28" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+    <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.36-30.36C293.19,124,256,122.67,224,122.67s-69.19,1.31-94.35,8.63a54,54,0,0,0-30.36,30.36C124,162.81,122.67,200,122.67,232s1.31,69.19,8.63,94.35a54,54,0,0,0,30.36,30.36c25.16,7.32,62.35,8.63,94.35,8.63s69.19-1.31,94.35-8.63a54,54,0,0,0,30.36-30.36c7.32-25.16,8.63-62.35,8.63-94.35S356,162.81,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338Zm85.4-148.6a19.2,19.2,0,1,1-19.2-19.2A19.2,19.2,0,0,1,309.4,189.4ZM398.8,80A80,80,0,0,0,368,51.2C343.2,40,304.8,32,256,32s-87.2,8-112,19.2A80,80,0,0,0,49.2,80C40,104.8,32,143.2,32,192s8,87.2,19.2,112A80,80,0,0,0,80,398.8C104.8,408,143.2,416,192,416s87.2-8,112-19.2a80,80,0,0,0,30.8-30.8C408,343.2,416,304.8,416,256S408,168.8,398.8,80ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338Zm85.4-148.6a19.2,19.2,0,1,1-19.2-19.2A19.2,19.2,0,0,1,309.4,189.4Z"/>
+  </svg>
+</a>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Todos los derechos reservados.</p>
+  <p>Desarrollado por:</p>
+  <p> Jhon Edward Cifuentes.</p>
+
+
+
+  <script src="funciones.js"></script>
+  
+
+</body>
+</html>
